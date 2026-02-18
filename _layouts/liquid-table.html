@@ -1,1 +1,53 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<h2>Ryan vs Ryan</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><h3>Ryan Reynolds</h3></th>
+      <th><h3>Ryan Gosling</h3></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <h4>Strengths</h4>
+        <ul>
+          {% for item in page.reynolds.strengths %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+
+        <h4>Weaknesses</h4>
+        <ul>
+          {% for item in page.reynolds.weaknesses %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <h4>Strengths</h4>
+        <ul>
+          {% for item in page.gosling.strengths %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+
+        <h4>Weaknesses</h4>
+        <ul>
+          {% for item in page.gosling.weaknesses %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
